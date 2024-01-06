@@ -1,0 +1,59 @@
+<!-- To-Do List App:
+
+Create a simple to-do list application where users can add, edit, and delete tasks. You can enhance it by adding features like task prioritization and due dates. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+
+    <style>
+      button {
+        color: black;
+        font-size: 0.8rem;
+      }
+      #task-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tasksContainer = document.getElementById("tasks");
+        const addButton = document.getElementById("button1");
+
+        addButton.addEventListener("click", function () {
+          // Get the value from the input field
+          const taskValue = tasksContainer.value;
+
+          // Check if the input field is not empty
+          if (taskValue.trim() !== "") {
+            // Create a new task element
+            const newTask = document.createElement("p");
+            newTask.textContent = taskValue;
+
+            // Append the new task to the tasks container
+            document.body.appendChild(newTask);
+
+            // Clear the input field after adding the task
+            tasksContainer.value = "";
+          }
+        }); /////////////
+      });
+    </script>
+  </head>
+  <body>
+    <h1>TO DO LIST</h1>
+
+    <div id="task-bar">
+      <label for="name">Tasks</label>
+      <input type="text" id="tasks" name="tasks" />
+      <p><button id="button1">Add</button></p>
+    </div>
+  </body>
+</html>
