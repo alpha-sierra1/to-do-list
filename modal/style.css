@@ -13,6 +13,8 @@ nav {
   font-family: "Roboto", "sans-serif";
   /* gap: 0px; */
   padding: 20px;
+  background-color: #313131;
+  color: #cdcdcd;
 }
 
 .ul-1 {
@@ -32,4 +34,22 @@ nav {
 
   /* align-items: flex-end;
   justify-content: flex-end; */
+}
+.ul-2-1 {
+  display: flex;
+  gap: 6px;
+}
+.icon-1,
+.icon-2 {
+  display: flex;
+  fill: white;
+  align-items: center;
+  justify-content: center;
+}
+.li-1 {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 4px;
 }
