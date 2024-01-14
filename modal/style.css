@@ -76,10 +76,14 @@ nav {
 }
 .references-ul {
   list-style: none;
-  display: none;
+
   border: 0.5px solid white;
   font-size: 15px;
   border-radius: 4px;
   margin-top: 10px;
   padding: 10px;
+}
+
+.hidden {
+  display: none;
 }
