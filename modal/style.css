@@ -57,6 +57,22 @@ nav {
 
 .ref-button {
   border: none;
+  /* padding: 5px; */
+  outline: none;
+  background-color: #313131;
+  color: #cdcdcd;
+  font-family: "Roboto";
+  font-size: 17px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+.ref-button:hover {
+  /* border: 1px solid transparent; */
+  /* padding: 2px; */
+  color: white;
+  border-radius: 4px;
+  background-color: rgb(176, 190, 154);
 }
 .references-ul {
   list-style: none;
