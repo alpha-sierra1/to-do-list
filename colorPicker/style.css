@@ -1,0 +1,19 @@
+body {
+  background-color: aqua;
+}
+
+#color-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(102, 80, 80);
+  border-radius: 4px;
+  background-color: coral;
+}
