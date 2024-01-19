@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.querySelector("#btn-color");
+        const body = document.body;
+        const colors = [
+          "#3498db",
+          "#e74c3c",
+          "#2ecc71",
+          "#f39c12",
+          "#9b59b6",
+          "#1abc9c",
+        ];
+
+        btn.addEventListener("click", function () {
+          const randomColors =
+            colors[Math.floor(Math.random() * colors.length)];
+          body.style.backgroundColor = randomColors;
+        });
+      });
+    </script>
   </head>
   <body>
     <div><button id="color-btn">Change Colour</button></div>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
