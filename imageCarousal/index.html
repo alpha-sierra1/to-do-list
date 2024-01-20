@@ -11,21 +11,59 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 2rem;
+      }
+      #imageContainer2 {
+        display: none;
+      }
+      #button1,
+      #button2 {
+        cursor: pointer;
       }
     </style>
 
-    <script></script>
+    <script>
+      const btn1 = document.querySelector("#button1");
+      const btn2 = document.querySelector("#button2");
+      const imageBox1 = document.querySelector("#imageContainer");
+      const imageBox2 = document.querySelector("#imageContainer2");
+
+      btn1.addEventListener("click", function () {});
+    </script>
   </head>
   <body>
     <div id="imageBox">
-      <button id="button-1">Left</button>
+      <button id="button1">Left</button>
       <div id="imageContainer">
         <img
           src="/imageCarousal/images/amsterdam-1.jpeg"
           alt="amsterdam-picture"
         />
       </div>
-      <button id="button-2">Right</button>
+      <div id="imageContainer2">
+        <img
+          src="/imageCarousal/images/amsterdam-2.jpeg"
+          alt="amsterdam-picture"
+        />
+        <img
+          src="/imageCarousal/images/amsterdam-3.jpeg"
+          alt="amsterdam-picture"
+        />
+        <img
+          src="/imageCarousal/images/amsterdam-4.jpeg"
+          alt="amsterdam-picture"
+        />
+        <img
+          src="/imageCarousal/images/amsterdam-5.jpeg"
+          alt="amsterdam-picture"
+        />
+        <img
+          src="/imageCarousal/images/amsterdam-6.jpeg"
+          alt="amsterdam-picture"
+        />
+      </div>
+
+      <button id="button2">Right</button>
     </div>
   </body>
 </html>
