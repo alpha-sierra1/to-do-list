@@ -23,12 +23,16 @@
     </style>
 
     <script>
-      const btn1 = document.querySelector("#button1");
-      const btn2 = document.querySelector("#button2");
-      const imageBox1 = document.querySelector("#imageContainer");
-      const imageBox2 = document.querySelector("#imageContainer2");
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn1 = document.querySelector("#button1");
+        const btn2 = document.querySelector("#button2");
+        const imageBox1 = document.querySelector("#imageContainer");
+        const imageBox2 = document.querySelector("#imageContainer2");
 
-      btn1.addEventListener("click", function () {});
+        btn1.addEventListener("click", function (event) {
+          console.log("hello");
+        });
+      });
     </script>
   </head>
   <body>
