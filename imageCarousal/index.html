@@ -26,11 +26,13 @@
       document.addEventListener("DOMContentLoaded", function () {
         const btn1 = document.querySelector("#button1");
         const btn2 = document.querySelector("#button2");
-        const imageBox1 = document.querySelector("#imageContainer");
+        const imageBox1 = document.querySelector("#imageContainer1");
         const imageBox2 = document.querySelector("#imageContainer2");
+        const image1 = document.getElementById("imageOne");
+        // const image2 = document.getElementById()
 
-        btn1.addEventListener("click", function (event) {
-          console.log("hello");
+        btn2.addEventListener("click", function (event) {
+          // image1.src = "/imageCarousal/images/amsterdam-2.jpeg";
         });
       });
     </script>
@@ -38,34 +40,38 @@
   <body>
     <div id="imageBox">
       <button id="button1">Left</button>
-      <div id="imageContainer">
-        <img
-          src="/imageCarousal/images/amsterdam-1.jpeg"
-          alt="amsterdam-picture"
-        />
-      </div>
-      <div id="imageContainer2">
-        <img
-          src="/imageCarousal/images/amsterdam-2.jpeg"
-          alt="amsterdam-picture"
-        />
-        <img
-          src="/imageCarousal/images/amsterdam-3.jpeg"
-          alt="amsterdam-picture"
-        />
-        <img
-          src="/imageCarousal/images/amsterdam-4.jpeg"
-          alt="amsterdam-picture"
-        />
-        <img
-          src="/imageCarousal/images/amsterdam-5.jpeg"
-          alt="amsterdam-picture"
-        />
-        <img
-          src="/imageCarousal/images/amsterdam-6.jpeg"
-          alt="amsterdam-picture"
-        />
-      </div>
+
+      <img
+        id="imageOne"
+        src="/imageCarousal/images/amsterdam-1.jpeg"
+        alt="amsterdam-picture"
+      />
+
+      <img
+        id="imageTwo"
+        src="/imageCarousal/images/amsterdam-2.jpeg"
+        alt="amsterdam-picture"
+      />
+      <img
+        id="imageThree"
+        src="/imageCarousal/images/amsterdam-3.jpeg"
+        alt="amsterdam-picture"
+      />
+      <img
+        id="imageFour"
+        src="/imageCarousal/images/amsterdam-4.jpeg"
+        alt="amsterdam-picture"
+      />
+      <img
+        id="imageFive"
+        src="/imageCarousal/images/amsterdam-5.jpeg"
+        alt="amsterdam-picture"
+      />
+      <img
+        id="imageSix"
+        src="/imageCarousal/images/amsterdam-6.jpeg"
+        alt="amsterdam-picture"
+      />
 
       <button id="button2">Right</button>
     </div>
